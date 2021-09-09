@@ -3,6 +3,7 @@ package org.nobledev.midgard.data.profile
 import org.bson.codecs.pojo.annotations.BsonId
 import org.nobledev.midgard.data.item.ItemInstance
 import org.nobledev.midgard.data.skills.Skill
+import org.nobledev.midgard.data.skills.SkillData
 import java.util.EnumMap
 
 data class Profile(
@@ -12,6 +13,6 @@ data class Profile(
     var balance : Double = 0.0,
     var inventory : List<ItemInstance>,
     var bank : List<ItemInstance>,
-    var xp : Map<Skill, Double>
+    var skillXP : List<SkillData>
 ) {
 }
