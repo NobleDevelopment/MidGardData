@@ -12,6 +12,6 @@ data class Profile(
     var balance : Double = 0.0,
     var inventory : List<ItemInstance>,
     var bank : List<ItemInstance>,
-    var xp : EnumMap<Skill, Double>
+    var xp : Map<Skill, Double>
 ) {
 }
